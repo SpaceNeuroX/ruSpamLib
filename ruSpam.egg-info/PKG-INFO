@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: ruSpam
-Version: 0.1.0
+Version: 0.1.4
 Summary: A simple spam detection library using a pre-trained model from Hugging Face
 Author: NeuroSpaceX
 Author-email: totoshkus@gmail.com
