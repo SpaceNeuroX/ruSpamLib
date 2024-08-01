@@ -1,9 +1,0 @@
-README.md
-setup.py
-ruSpam.egg-info/PKG-INFO
-ruSpam.egg-info/SOURCES.txt
-ruSpam.egg-info/dependency_links.txt
-ruSpam.egg-info/requires.txt
-ruSpam.egg-info/top_level.txt
-ruSpamLib/__init__.py
-ruSpamLib/detector.py
