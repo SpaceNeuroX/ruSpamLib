@@ -32,5 +32,5 @@ print(f"Prediction: {'Spam' if pred_average else 'Not Spam'}")
 
 ## Разработчики
 
-1. spamNS_v1 - разработчик @NeuroSpaceX
-2. spam_deberta_v4 - разработчик @bceloss
+1. spamNS_v1 - разработчик [NeuroSpaceX](https://t.me/NeuroSpaceX)
+2. spam_deberta_v4 - разработчик [bceloss](https://t.me/bceloss)
