@@ -9,7 +9,7 @@
 
 ```bash
 pip install ruSpam
-
+```
 
 ## Пример использования
 
