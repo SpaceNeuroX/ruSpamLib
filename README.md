@@ -23,7 +23,7 @@ pred_average = is_spam(message, model_name="spam_deberta_v4")
 print(f"Prediction: {'Spam' if pred_average else 'Not Spam'}")
 ```
 
-## модели 
+## Модели 
 
 1. spamNS_v1
 2. spamNS-tiny_V1
