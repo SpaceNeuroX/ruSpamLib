@@ -27,4 +27,3 @@ print(f"Prediction: {'Spam' if pred_average else 'Not Spam'}")
 
 1. spamNS_v1
 2. spamNS-tiny_V1
-2. spamNS-large_V1
