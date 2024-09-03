@@ -6,7 +6,7 @@ long_description = readme_path.read_text(encoding='utf-8')
 
 setup(
     name='ruSpam',
-    version='0.2.2',
+    version='0.2.4',
     packages=find_packages(),
     install_requires=[
         'requests'
