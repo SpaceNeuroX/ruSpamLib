@@ -18,7 +18,7 @@ from ruSpamLib import is_spam
 
 message = input("Введите сообщение: ")
 
-pred_average = is_spam(message, model_name="spamNS-large_V1")
+pred_average = is_spam(message, model_name="spamNS-mini-turbo_v2")
 
 print(f"Prediction: {'Spam' if pred_average else 'Not Spam'}")
 ```
