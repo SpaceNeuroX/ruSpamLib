@@ -41,3 +41,5 @@ pred_average = is_spam(message, multi_model=True)
 
 print(f"Prediction: {'Spam' if pred_average else 'Not Spam'}")
 ```
+
+Лицензия и использование При использовании библиотеки в некоммерческих проектах необходимо указывать автора библиотеки — NeuroSpaceX.
