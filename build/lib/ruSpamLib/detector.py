@@ -1,6 +1,6 @@
 import requests
 
-def is_spam(message, model_name='spamNS_v1', multi_model=False):
+def is_spam(message, model_name='spamNS_v6', multi_model=False):
     if multi_model:
         api_url = "https://neurospacex-ruspamlib-serverandsite.hf.space/api/check_spam_all"
         payload = {
@@ -18,13 +18,17 @@ def is_spam(message, model_name='spamNS_v1', multi_model=False):
     if response.status_code == 200:
         result = response.json()
         if multi_model:
-            return result.get('classification', '') == 'spam'
+            is_spam_result = result.get('classification', '') == 'spam'
+            confidence = result.get('confidence', 0)
         else:
-            return result.get('is_spam', 0) == 1
+            is_spam_result = result.get('is_spam', 0) == 1
+            confidence = result.get('confidence', 0)
+        
+        return is_spam_result, confidence
     else:
         print("Ошибка при запросе к API:", response.status_code)
         if response.status_code == 400:
             result = response.json()
             if 'error' in result:
                 print("Ошибка:", result['error'])
-        return False
+        return False, 0  # Return False for is_spam and 0 confidence in case of an error
