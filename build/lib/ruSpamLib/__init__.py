@@ -1,1 +1,1 @@
-from .detector import is_spam
+from .detector import *

@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: ruSpam
-Version: 0.2.9
+Version: 0.3.4
 Summary: A simple spam detection library using a pre-trained model from Hugging Face
 Author: NeuroSpaceX
 Author-email: totoshkus@gmail.com
@@ -31,7 +31,7 @@ from ruSpamLib import is_spam
 
 message = input("Введите сообщение: ")
 
-pred_average = is_spam(message, model_name="spamNS-mini-turbo_v2")
+pred_average, confidence = is_spam(message, model_name="spamNS_v6")
 
 print(f"Prediction: {'Spam' if pred_average else 'Not Spam'}")
 ```
@@ -39,21 +39,7 @@ print(f"Prediction: {'Spam' if pred_average else 'Not Spam'}")
 ## Модели 
 
 1. spamNS_v1
-2. spamNS_large_v3
-3. spamNS-mini-turbo_v1
-4. spamNS-mini-turbo_v2
-
-Вы можете передать параметр multi_model=True в функцию is_spam, чтобы использовать все доступные модели одновременно. Это может повысить точность детекции спама, однако не обязательно указывать конкретную модель. Пример использования:
-
-```python
-from ruSpamLib import is_spam
-
-message = input("Введите сообщение: ")
-
-pred_average = is_spam(message, multi_model=True)
-
-print(f"Prediction: {'Spam' if pred_average else 'Not Spam'}")
-```
+2. spamNS_v6
 
 Лицензия и использование
 При использовании библиотеки в некоммерческих проектах необходимо указывать автора библиотеки — NeuroSpaceX.
