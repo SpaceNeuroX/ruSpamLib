@@ -60,6 +60,6 @@ print(result)
 pip install ruSpam
 ```
 
-## Ссылка на код библиотеки
+## Ссылка на сайт
 
-[GitHub: ruSpam](https://github.com/NeuroSpaceX/ruSpam)
+[https://ru-spam.ru/](https://ru-spam.ru/)
